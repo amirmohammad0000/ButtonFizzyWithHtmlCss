@@ -1,0 +1,73 @@
+/************************************************************************/ /* Start Style All */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Segoe UI;
+  user-select: none;
+}
+/************************************************************************/ /* End Style All */
+
+/************************************************************************/ /* Start Style App */
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+}
+
+.section_button_fizzy {
+  position: relative;
+  width: 220px;
+  height: 60px;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 15px;
+  font-family: monospace;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.section_button_fizzy:hover {
+  background-color: #fff;
+  color: #222;
+  padding-left: 50px;
+  border-radius: 2px;
+}
+
+.section_button_fizzy:hover .icon_button_fizzy {
+  bottom: 16px;
+  opacity: 1;
+}
+
+@keyframes RunArrow {
+  0% {
+    left: 35px;
+  }
+  100% {
+    left: 100px;
+  }
+}
+
+.icon_button_fizzy {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  left: 35px;
+  font-size: 25px;
+  transition: all 0.5s;
+  color: skyblue;
+}
+
+.icon_check {
+  position: absolute;
+  font-size: 25px;
+  transform: rotate(-90deg);
+  color: skyblue;
+}
+/************************************************************************/ /* End Style App */
